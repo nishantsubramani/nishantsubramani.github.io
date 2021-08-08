@@ -37,8 +37,11 @@ favicon: "/img/favicon.ico"
 ############
 
 events:
+  - image: "/img/timeline/ai2.png"
+    date: "June 2021 - Present"
+    description: "Predoctoral Young Investigator at the Allen Institute for AI (AllenNLP team)" 
   - image: "/img/timeline/intel.jpeg"
-    date: "January 2021 - Present"
+    date: "January 2021 - June 2021"
     description: "Predoctoral Resident at Intel's Intelligent Systems Lab" 
   - image: "/img/timeline/scale.png"
     date: "April 2020 - December 2020"
