@@ -1,7 +1,7 @@
 
 # NB! Set your site's url, otherwise stuff will break :)
 
-url: "https://hatat5.github.io"
+url: "https://nishantsubramani.github.io"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
@@ -29,7 +29,7 @@ lang: "en"
 author: "Nishant Subramani"
 title: "Nishant Subramani"
 description: "Website of Nishant Subramani" 
-keywords: "nishant, subramani, personal, northwestern, nyu, new york university, cilvr, mll, scale, scale ai, deep learning, natural language processing, NLP, ML, predoctoral, intel"
+keywords: "nishant, subramani, personal, northwestern, nyu, new york university, cilvr, mll, deep learning, natural language processing, NLP, ML, predoctoral, intel, ai2, allen institute for ai"
 favicon: "/img/favicon.ico"
 
 ############
