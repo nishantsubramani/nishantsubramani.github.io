@@ -192,7 +192,7 @@ social:
 # Sections shown in the index page
 
 pages_list:
-  About: 'about'
+  #  About: 'about'
   Timeline: 'timeline'
   Research: 'research'
   #  Blog: 'latest-post'
