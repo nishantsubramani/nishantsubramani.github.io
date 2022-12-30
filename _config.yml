@@ -193,8 +193,8 @@ social:
 
 pages_list:
   #  About: 'about'
-  Timeline: 'timeline'
   Research: 'research'
+  Timeline: 'timeline'
   #  Blog: 'latest-post'
   Contact: 'contact'
 
