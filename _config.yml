@@ -30,7 +30,7 @@ author: "Nishant Subramani"
 title: "Nishant Subramani"
 description: "Website of Nishant Subramani" 
 keywords: "nishant, subramani, personal, northwestern, nyu, new york university, cilvr, mll, deep learning, natural language processing, NLP, ML, predoctoral, intel, ai2, allen institute for ai"
-favicon: "/img/favicon.ico"
+favicon: "/img/new_author.ico"
 
 ############
 # Timeline #
@@ -104,7 +104,7 @@ delete-delay: 5000
 lines: # You can add HTML Tags in the Text
   - text: "Nishant Subramani: Predoctoral Young Investigator at the Allen Institute for Artificial Intelligence"
 
-me-img: "/img/author2.jpg"
+me-img: "/img/new_author.jpg"
 
 ##############################
 # Color the browser elements #
