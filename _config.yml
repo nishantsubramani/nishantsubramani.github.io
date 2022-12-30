@@ -86,7 +86,8 @@ timeline-img: "/img/timeline/default.png"
 
 #background-img: "/img/galaxy.jpg"
 #background-img: "/img/hobbit_hole.png"
-background-img: "/img/honolulu_rainbow_background_dim.jpg"
+#background-img: "/img/honolulu_rainbow_background_dim.jpg"
+#background-img: "/img/honolulu_rainbow_background_dim.jpg"
 
 ##############################
 # Dynamic Text on the Header #
