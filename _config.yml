@@ -158,7 +158,7 @@ email: "nishant.subramani23@gmail.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Nishant Subramani is a Machine Learning Researcher with interests in machine learning, deep learning, natural language processing, ML for social good, and fake speech detection and synthesis."
+author_blurb: "Nishant Subramani is a Predoctoral Young Investigator at the Allen Institute for AI with interests in natural language processing and machine learning. He is especially interested in making natural language text generation systems more reliable and efficient."
 author_blurb_image: "/img/author2.jpg"
 
 ##################
