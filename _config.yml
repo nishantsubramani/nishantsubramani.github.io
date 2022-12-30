@@ -93,7 +93,8 @@ timeline-img: "/img/timeline/default.png"
 # Dynamic Text on the Header #
 ##############################
 
-dynamic-typing: True
+dynamic-typing: False
+#dynamic-typing: True
 shuffle: True # Shuffle the lines.
 loop: False 
 loop-count: False # Set False for infinite loop, or set any number for finite loop.
@@ -101,7 +102,7 @@ type-speed: 10
 start-delay: 20
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "Nishant Subramani: Machine Learning Researcher"
+  - text: "Nishant Subramani: Predoctoral Young Investigator at the Allen Institute for Artificial Intelligence"
 
 me-img: "/img/author2.jpg"
 
@@ -168,7 +169,7 @@ social:
   - title: "twitter"
     url: "https://twitter.com/nsubramani23/"
   - title: "github"
-    url: "https://github.com/hatat5/"
+    url: "https://github.com/nishantsubramani/"
   - title: "linkedin"
     url: "https://linkedin.com/in/nishantsubramani/"
   - title: "rss"
