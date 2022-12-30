@@ -445,3 +445,11 @@ body {
 .fourofour {
   border: 1px solid $primary-color !important;
 }
+
+
+.bullet-parent {
+  text-align: center;
+}
+.bullet-parent > ul {
+  display: inline-block;
+}
