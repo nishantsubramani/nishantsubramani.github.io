@@ -37,8 +37,11 @@ favicon: "/img/new_author.ico"
 ############
 
 events:
+  - image: "/img/timeline/cmu.png"
+    date: "August 2023 - Present"
+    description: "PhD Student at Carnegie Mellon University (Language Technologies Institute)" 
   - image: "/img/timeline/ai2.png"
-    date: "June 2021 - Present"
+    date: "June 2021 - October 2023"
     description: "Predoctoral Young Investigator at the Allen Institute for AI (AllenNLP team)" 
   - image: "/img/timeline/intel.jpeg"
     date: "January 2021 - June 2021"
