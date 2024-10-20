@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Model Interpretability Researcher
+subtitle: Model Interpretability Researcher 🔎 
 
 profile:
   align: left
@@ -17,7 +17,7 @@ news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-Looking for research internships in summer 2025 focused on model interpretability; please reach out!
+*Looking for research internships in summer 2025 focused on model interpretability; please reach out!*
 
 I am a 2nd year PhD student 🎓 at [CMU](https://cmu.edu) in the [Language Technologies Institute (LTI)](https://lti.cs.cmu.edu/) advised by [Mona Diab](https://scholar.google.com/citations?user=-y6SIhQAAAAJ&hl=en). I have published at most of the major ML and NLP venues and was a part of the [BLOOM](https://bigscience.huggingface.co/blog/bloom) and [OLMo](https://allenai.org/olmo) open LLM efforts leading to two [best paper awards at ACL2024](https://2024.aclweb.org/program/best_papers/) and a [GeekWire innovation of the year award](https://www.geekwire.com/2024/ai-and-telecom-breakthroughs-dominate-innovation-of-the-year-category-for-2024-geekwire-awards/i). I spent this past summer as an intern on the [semantic machines team at Microsoft Research](https://www.microsoft.com/en-us/research/group/semantic-machines/) on [Ben Van Durme](https://www.cs.jhu.edu/~vandurme/) and [Jason Eisner's](https://www.cs.jhu.edu/~jason/) team.
 
