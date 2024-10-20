@@ -2,11 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Model Interpretability Researcher
 
 profile:
   align: left
-  image: prof_pic_color.png
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: #>
     #<p>555 your office number</p>
