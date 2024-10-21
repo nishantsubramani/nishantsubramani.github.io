@@ -40,7 +40,10 @@
             alt=entry.preview
           %}
         {% endif %}
-      {% endif %}
+    {% endif %}
+    {% if entry.award %}
+      <span class="award badge">{{entry.award}}</span>
+    {% endif %}
     </div>
   {% endif %}
 
