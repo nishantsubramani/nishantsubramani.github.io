@@ -113,7 +113,7 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
 contact_note: >
-  <myfirstname> dot <mylastname> 23 at <gmail> is the best way to reach me!
+  you can reach me at MyFirstName dot MyLastName 23 at gmail is the best way to reach me!
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -202,7 +202,7 @@ collections:
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   #enabled: true
