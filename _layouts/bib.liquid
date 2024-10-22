@@ -247,7 +247,11 @@
       {% endif %}
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
-      {% endif %}
+    {% endif %}
+      {%- if entry.url %}
+        <a href="{{ entry.paper_link }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
+      {%- endif %}
+
     </div>
     {% if site.enable_publication_badges %}
       {% assign entry_has_altmetric_badge = false %}
