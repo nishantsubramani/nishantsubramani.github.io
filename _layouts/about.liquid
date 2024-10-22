@@ -37,6 +37,8 @@ layout: default
         {% endif %}
       </div>
     {% endif %}
+    
+    <hr>
 
     <div class="clearfix">{{ content }}</div>
 
@@ -55,6 +57,8 @@ layout: default
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
+    
+    <hr>
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
@@ -63,6 +67,8 @@ layout: default
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
+
+    <hr>
 
     <!-- Social -->
     {% if page.social %}
