@@ -187,6 +187,9 @@
 
     <!-- Links/Buttons -->
     <div class="links">
+      {%- if entry.url %}
+        <a href="{{ entry.paper_link }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
+      {%- endif %}
       {% if entry.abstract %}
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
       {% endif %}
@@ -248,9 +251,6 @@
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
     {% endif %}
-      {%- if entry.url %}
-        <a href="{{ entry.paper_link }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
-      {%- endif %}
 
     </div>
     {% if site.enable_publication_badges %}
