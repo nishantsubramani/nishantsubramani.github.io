@@ -61,6 +61,7 @@
     selected={true},
     paper_link = {https://arxiv.org/abs/2402.00838},
     preview = {olmo.png},
+    abstract = {Language models (LMs) have become ubiquitous in both NLP research and in commercial product offerings. As their commercial importance has surged, the most powerful models have become closed off, gated behind proprietary interfaces, with important details of their training data, architectures, and development undisclosed. Given the importance of these details in scientifically studying these models, including their biases and potential risks, we believe it is essential for the research community to have access to powerful, truly open LMs. To this end, we have built OLMo, a competitive, truly Open Language Model, to enable the scientific study of language models. Unlike most prior efforts that have only released model weights and inference code, we release OLMo alongside open training data and training and evaluation code. We hope this release will empower the open research community and inspire a new wave of innovation.},
 }
 
 @inproceedings{soldaini-etal-2024-dolma,
@@ -111,6 +112,7 @@
     selected={true},
     paper_link = {https://arxiv.org/abs/2402.00159},
     preview = {dolma.png},
+    abstract = {Information about pretraining corpora used to train the current best-performing language models is seldom discussed: commercial models rarely detail their data, and even open models are often released without accompanying training data or recipes to reproduce them. As a result, it is challenging to conduct and advance scientific research on language modeling, such as understanding how training data impacts model capabilities and limitations. To facilitate scientific research on language model pretraining, we curate and release Dolma, a three-trillion-token English corpus, built from a diverse mixture of web content, scientific papers, code, public-domain books, social media, and encyclopedic materials. We extensively document Dolma, including its design principles, details about its construction, and a summary of its contents. We present analyses and experimental results on intermediate states of Dolma to share what we have learned about important data curation practices. Finally, we open-source our data curation toolkit to enable reproduction of our work as well as support further research in large-scale data curation.},
 }
 
 @article{subramani-etal-2024-evaluating,
@@ -181,6 +183,7 @@
     abbr = "TrustNLP @ ACL",
     paper_link = {https://aclanthology.org/2023.trustnlp-1.18/},
     preview = {trustnlp2023_pi.png},
+    abstract = {Large language models are trained on increasing quantities of unstructured text, the largest sources of which are scraped from the Web. These Web scrapes are mainly composed of heterogeneous collections of text from multiple domains with minimal documentation. While some work has been done to identify and remove toxic, biased, or sexual language, the topic of personal information (PI) in textual data used for training Natural Language Processing (NLP) models is relatively under-explored. In this work, we draw from definitions of PI across multiple countries to define the first PI taxonomy of its kind, categorized by type and risk level. We then conduct a case study on the Colossal Clean Crawled Corpus (C4) and the Pile, to detect some of the highest-risk personal information, such as email addresses and credit card numbers, and examine the differences between automatic and regular expression-based approaches for their detection. We identify shortcomings in modern approaches for PI detection, and propose a reframing of the problem that is informed by global perspectives and the goals in personal information detection.},
 }
 
 @inproceedings{king-etal-2022-dont,
@@ -209,6 +212,7 @@
     abbr = "GEM @ EMNLP",
     paper_link = {https://arxiv.org/abs/2203.08436/},
     preview = {emnlp2022_pinocchio.png},
+    abstract = {Abstractive summarization systems today produce fluent and relevant output, but often “hallucinate” statements not supported by the source text. We analyze the connection between hallucinations and training data, and find evidence that models hallucinate because they train on target summaries that are unsupported by the source. Based on our findings, we present PINOCCHIO, a new decoding method that improves the consistency of a transformer-based abstractive summarizer by constraining beam search to avoid hallucinations. Given the model states and outputs at a given step, PINOCCHIO detects likely model hallucinations based on various measures of attribution to the source text. PINOCCHIO backtracks to find more consistent output, and can opt to produce no summary at all when no consistent generation can be found. In experiments, we find that PINOCCHIO improves the consistency of generation by an average of 67% on two abstractive summarization datasets, without hurting recall.},
 }
 
 @inproceedings{gehrmann-etal-2022-gemv2,
@@ -302,6 +306,7 @@
     abbr = "EMNLP",
     paper_link = {https://arxiv.org/abs/2206.11249/},
     preview = {emnlp2022_gemv2.png},
+    abstract = {Evaluation in machine learning is usually informed by past choices, for example which datasets or metrics to use. This standardization enables the comparison on equal footing using leaderboards, but the evaluation choices become sub-optimal as better alternatives arise. This problem is especially pertinent in natural language generation which requires ever-improving suites of datasets, metrics, and human evaluation to make definitive claims. To make following best model evaluation practices easier, we introduce GEMv2. The new version of the Generation, Evaluation, and Metrics Benchmark introduces a modular infrastructure for dataset, model, and metric developers to benefit from each others work. GEMv2 supports 40 documented datasets in 51 languages. Models for all datasets can be evaluated online and our interactive data card creation and rendering tools make it easier to add new datasets to the living benchmark.},
 }
 
 @inproceedings{subramani-etal-2022-extracting,
@@ -323,6 +328,7 @@
     selected = {true},
     paper_link = {https://arxiv.org/abs/2205.05124/},
     preview = {steering_vecs_acl22.png},
+    abstract = {Prior work on controllable text generation has focused on learning how to control language models through trainable decoding, smart-prompt design, or fine-tuning based on a desired objective. We hypothesize that the information needed to steer the model to generate a target sentence is already encoded within the model. Accordingly, we explore a different approach altogether: extracting latent vectors directly from pretrained language model decoders without fine-tuning. Experiments show that there exist steering vectors, which, when added to the hidden states of the language model, generate a target sentence nearly perfectly (> 99 BLEU) for English sentences from a variety of domains. We show that vector arithmetic can be used for unsupervised sentiment transfer on the Yelp sentiment benchmark, with performance comparable to models tailored to this task. We find that distances between steering vectors reflect sentence similarity when evaluated on a textual similarity benchmark (STS-B), outperforming pooled hidden states of models. Finally, we present an analysis of the intrinsic properties of the steering vectors. Taken together, our results suggest that frozen LMs can be effectively controlled through their latent steering space.},
 }
 
 @article{Scao2022BLOOMA1,
@@ -337,6 +343,7 @@
   selected={true},
   paper_link = {https://arxiv.org/abs/2211.05100/},
   preview = {bloom_fig.png},
+  abstract = {Large language models (LLMs) have been shown to be able to perform new tasks based on a few demonstrations or natural language instructions. While these capabilities have led to widespread adoption, most LLMs are developed by resource-rich organizations and are frequently kept from the public. As a step towards democratizing this powerful technology, we present BLOOM, a 176B-parameter open-access language model designed and built thanks to a collaboration of hundreds of researchers. BLOOM is a decoder-only Transformer language model that was trained on the ROOTS corpus, a dataset comprising hundreds of sources in 46 natural and 13 programming languages (59 in total). We find that BLOOM achieves competitive performance on a wide variety of benchmarks, with stronger results after undergoing multitask prompted finetuning. To facilitate future research and applications using LLMs, we publicly release our models and code under the Responsible AI License.},
 }
 
 @inproceedings{10.1145/3531146.3534637,
@@ -353,6 +360,7 @@ bibtex_show = {},
 abbr = "FAccT",
 paper_link = {https://arxiv.org/abs/2206.03216/},
 preview = {facct2022_datagov.png},
+abstract = {The recent emergence and adoption of Machine Learning technology, and specifically of Large Language Models, has drawn attention to the need for systematic and transparent management of language data. This work proposes an approach to global language data governance that attempts to organize data management amongst stakeholders, values, and rights. Our proposal is informed by prior work on distributed governance that accounts for human values and grounded by an international research collaboration that brings together researchers and practitioners from 60 countries. The framework we present is a multi-party international governance structure focused on language data, and incorporating technical and organizational tools needed to support its work.},
 }
 
 @article{kreutzer-etal-2022-quality,
@@ -421,6 +429,7 @@ preview = {facct2022_datagov.png},
     abbr = "TACL",
     paper_link = {https://arxiv.org/abs/2103.12028/},
     preview = {tacl2022_quality_at_a_glance.png},
+    abstract = {With the success of large-scale pre-training and multilingual modeling in Natural Language Processing (NLP), recent years have seen a proliferation of large, web-mined text datasets covering hundreds of languages. We manually audit the quality of 205 language-specific corpora released with five major public datasets (CCAligned, ParaCrawl, WikiMatrix, OSCAR, mC4). Lower-resource corpora have systematic issues: At least 15 corpora have no usable text, and a significant fraction contains less than 50% sentences of acceptable quality. In addition, many are mislabeled or use nonstandard/ambiguous language codes. We demonstrate that these issues are easy to detect even for non-proficient speakers, and supplement the human audit with automatic analyses. Finally, we recommend techniques to evaluate and improve multilingual corpora and discuss potential risks that come with low-quality data releases.},
 }
 
 @inproceedings{gehrmann-etal-2021-gem,
@@ -500,6 +509,7 @@ preview = {facct2022_datagov.png},
     abbr = "GEM @ ACL",
     paper_link = {https://arxiv.org/abs/2102.01672/},
     preview = {gemv1_table.png},
+    abstract = {We introduce GEM, a living benchmark for natural language Generation (NLG), its Evaluation, and Metrics. Measuring progress in NLG relies on a constantly evolving ecosystem of automated metrics, datasets, and human evaluation standards. Due to this moving target, new models often still evaluate on divergent anglo-centric corpora with well-established, but flawed, metrics. This disconnect makes it challenging to identify the limitations of current models and opportunities for progress. Addressing this limitation, GEM provides an environment in which models can easily be applied to a wide set of tasks and in which evaluation strategies can be tested. Regular updates to the benchmark will help NLG research become more multilingual and evolve the challenge alongside models. This paper serves as the description of the data for which we are organizing a shared task at our ACL 2021 Workshop and to which we invite the entire NLG community to participate.},
 }
 
 @article{Lau2021NaturalAO,
@@ -513,6 +523,7 @@ preview = {facct2022_datagov.png},
   abbr = "DataCentricAI @ NeurIPS",
   paper_link = {https://arxiv.org/abs/2111.04204/},
   preview = {nao_fig.png},
+  abstract = {Although state-of-the-art object detection methods have shown compelling performance, models often are not robust to adversarial attacks and out-of-distribution data. We introduce a new dataset, Natural Adversarial Objects (NAO), to evaluate the robustness of object detection models. NAO contains 7,934 images and 9,943 objects that are unmodified and representative of real-world scenarios, but cause state-of-the-art detection models to misclassify with high confidence. The mean average precision (mAP) of EfficientDet-D7 drops 74.5% when evaluated on NAO compared to the standard MSCOCO validation set. Moreover, by comparing a variety of object detection architectures, we find that better performance on MSCOCO validation set does not necessarily translate to better performance on NAO, suggesting that robustness cannot be simply achieved by training a more accurate model. We further investigate why examples in NAO are difficult to detect and classify. Experiments of shuffling image patches reveal that models are overly sensitive to local texture. Additionally, using integrated gradients and background replacement, we find that the detection model is reliant on pixel information within the bounding box, and insensitive to the background context when predicting class labels. NAO can be downloaded at https://drive.google.com/drive/folders/15P8sOWoJku6SSEiHLEts86ORfytGezi8.},
 }
 
 @article{Subramani2020ASO,
@@ -526,6 +537,7 @@ preview = {facct2022_datagov.png},
   abbr = "MLRSA @ NeurIPS",
   paper_link = {https://arxiv.org/abs/2011.13534/},
   preview = {doc_analysis_survey_fig.png},
+  abstract = {Documents are a core part of many businesses in many fields such as law, finance, and technology among others. Automatic understanding of documents such as invoices, contracts, and resumes is lucrative, opening up many new avenues of business. The fields of natural language processing and computer vision have seen tremendous progress through the development of deep learning such that these methods have started to become infused in contemporary document understanding systems. In this survey paper, we review different techniques for document understanding for documents written in English and consolidate methodologies present in literature to act as a jumping-off point for researchers exploring this area.},
 }
 
 
@@ -540,6 +552,7 @@ preview = {facct2022_datagov.png},
   abbr = "arXiv",
   paper_link = {https://arxiv.org/abs/2008.09049/},
   preview = {arxiv_steering_vec_fig.png},
+  abstract = {Despite the extensive success of pretrained language models as encoders for building NLP systems, they haven't seen prominence as decoders for sequence generation tasks. We explore the question of whether these models can be adapted to be used as universal decoders. To be considered "universal," a decoder must have an implicit representation for any target sentence s, such that it can recover that sentence exactly when conditioned on its representation. For large transformer-based language models trained on vast amounts of English text, we investigate whether such representations can be easily discovered using standard optimization methods. We present and compare three representation injection techniques for transformer-based models and three accompanying methods which map sentences to and from this representation space. Experiments show that not only do representations exist for sentences from a variety of genres. More importantly, without needing complex optimization algorithms, our methods recover these sentences almost perfectly without fine-tuning the underlying language model at all.},
 }
 
 @inproceedings{Subramani2020LearningER,
@@ -552,6 +565,7 @@ preview = {facct2022_datagov.png},
   abbr = "AAAI",
   paper_link = {https://ojs.aaai.org/index.php/AAAI/article/view/6044/},
   preview = {aaai2020_fakespeech_fig.png},
+  abstract = {Synthetic speech or “fake speech” which matches personal vocal traits has become better and cheaper due to advances in deep learning-based speech synthesis and voice conversion approaches. This increased accessibility of synthetic speech systems and the growing misuse of them highlights the critical need to build countermeasures. Furthermore, new synthesis models evolve all the time and the efficacy of previously trained detection models on these unseen attack vectors is poor. In this paper, we focus on: 1) How can we build highly accurate, yet parameter and sample-efficient models for fake speech detection? 2) How can we rapidly adapt detection models to new sources of fake speech? We present four parameter-efficient convolutional architectures for fake speech detection with best detection F1 scores of around 97 points on a large dataset of fake and bonafide speech. We show how the fake speech detection task naturally lends itself to a novel multi-task problem further improving F1 scores for a mere 0.5% increase in model parameters. Our multi-task setting also helps in data-sparse situations, commonplace in adversarial settings. We investigate an alternative approach to the data-sparsity problem using transfer learning and show that it is possible to meet purely supervised detection performance for unseen attack vectors with as little as 6.25% of the training data. This is the first known application of transfer learning in adversarial settings for speech. Finally, we show how well our transfer learning approach adapts in an instance-efficient way to new attack vectors using the Real-Time Voice Cloning toolkit. We exceed the purely supervised detection performance (99.18 F1) with as little as 6.25% of the data.}
 }
 
 @article{subramani2019can,
@@ -566,6 +580,7 @@ preview = {facct2022_datagov.png},
   selected = {true},
   paper_link = {https://arxiv.org/abs/1907.04944/},
   preview = {neurips2019_lstm_steering.png},
+  abstract = {Neural network-based generative language models like ELMo and BERT can work effectively as general purpose sentence encoders in text classification without further fine-tuning. Is it possible to adapt them in a similar way for use as general-purpose decoders? For this to be possible, it would need to be the case that for any target sentence of interest, there is some continuous representation that can be passed to the language model to cause it to reproduce that sentence. We set aside the difficult problem of designing an encoder that can produce such representations and, instead, ask directly whether such representations exist at all. To do this, we introduce a pair of effective, complementary methods for feeding representations into pretrained unconditional language models and a corresponding set of methods to map sentences into and out of this representation space, the reparametrized sentence space. We then investigate the conditions under which a language model can be made to generate a sentence through the identification of a point in such a space and find that it is possible to recover arbitrary sentences nearly perfectly with language models and representations of moderate size without modifying any model parameters.},
 }
 
 @article{subramani2018pag2admg,
