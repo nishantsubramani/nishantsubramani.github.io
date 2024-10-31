@@ -9,7 +9,7 @@
   url={},
   bibtex_show = {},
   abbr = "under review",
-  selected = {True},
+  selected = {true},
   paper_link = {},
   preview = {mice4cat.png},
   abstract = {When tool-using agents perform actions in the world, models need to be both useful and safe. Well-calibrated model confidences can be used to weigh the risk versus reward of potential actions, but prior work shows that many models are poorly calibrated. Inspired by interpretability literature exploring the internals of models, we propose a novel class of model-internal confidence estimators (MICE) that better calibrate model confidences when calling tools. MICE first decodes from each intermediate layer of the language model using logit lens and then computes similarity scores between each layer’s generation and the final output. These features are fed into a learned linear regressor to adjust the model’s confidence, improving calibration. We find that MICE reduces expected calibration error by a factor of 3–10 for Llama3 models on the simulated trial and error (STE) tool-calling dataset. Further experiments show that MICE is data-efficient, generalizes zero-shot to unseen APIs, and results in higher tool-calling utility in scenarios with varying risk levels. We will release the MICE code at [redacted].},
