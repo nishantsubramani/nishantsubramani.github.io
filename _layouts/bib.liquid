@@ -161,8 +161,8 @@
       {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
     {% else %}
         {% capture entrytype %}{% endcapture %}
-    {% endcomment %}
     {% endif %}
+    {% endcomment %}
     {% if entry.month %}
       {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
     {% endif %}
