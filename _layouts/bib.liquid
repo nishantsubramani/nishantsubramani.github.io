@@ -42,7 +42,7 @@
         {% endif %}
     {% endif %}
     {% if entry.award %}
-      <span class="award badge">{{entry.award}}</span>
+      <span class="award badge">{{ entry.award }}</span>
     {% endif %}
     </div>
   {% endif %}
@@ -151,8 +151,6 @@
     <!-- Journal/Book title and date -->
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
-    {% capture entrytype %}<em>{{ entry.abbr }}</em>{% endcapture %}
-    {% comment %}
     {% if entry.type == 'article' %}
       {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
     {% elsif proceedings contains entry.type %}
@@ -162,6 +160,7 @@
     {% else %}
         {% capture entrytype %}{% endcapture %}
     {% endif %}
+    {% comment %}
     {% if entry.month %}
       {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
     {% endif %}
