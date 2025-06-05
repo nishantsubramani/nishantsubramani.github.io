@@ -1,5 +1,47 @@
 ---
 ---
+@article{Subramani2025MakingSense,
+  title={Making Sense of LLM Benchmarks from the Performance Matrices Alone},
+  author={Nishant Subramani* and Alfredo Gomez* and Mona T. Diab},
+  journal={Preprint},
+  year={2025},
+  url={},
+  bibtex_show = {},
+  abbr = "Under Review",
+  selected = {true},
+  paper_link = {},
+  preview = {simba.png},
+  abstract = {Modern language models are evaluated on large benchmarks. Given how many different numbers these evaluations output, making sense of them for model selection can be difficult. We take a closer look at this using a model-centric lens and look at the evaluation numbers themselves. In this work, we analyze benchmarks in three stages: dataset \& model comparison, representative set identification, and performance prediction. Since datasets and models relate strongly to one another, we develop an algorithm to identify a representative set of datasets that covers a benchmark using the raw evaluation scores alone. Using our algorithm, we find that with 5.9\% (1/17), 1.7\% (1/58), and 16.2\% (12/74) of the datasets for HELM, MMLU, and BigBenchLite respectively, we achieve coverage levels of at least 95\%. Additionally, using just these representative subsets, we can both preserve model ranks and predict performance on a held-out set of models with near zero mean-squared error. Taken together, our analysis can help model developers improve efficiency and allow dataset creators validate whether their newly created dataset differs from existing datasets in the benchmark.},
+}
+
+@article{LiuJain2025MIMicroscope,
+  title={LLM Microscope: What Model Internals Reveal About Answer Correctness and Context Use},
+  author={Jiarui Liu* and Jivitesh Jain* and Mona T. Diab and Nishant Subramani},
+  journal={Preprint},
+  year={2025},
+  url={},
+  bibtex_show = {},
+  abbr = "Under Review",
+  selected = {true},
+  paper_link = {},
+  preview = {mimicroscope.png},
+  abstract = {Although large language models (LLMs) have tremendous utility, trustworthiness is still a chief concern: models often generate incorrect information with high confidence. Retrieval-augmented generation (RAG) is known to help, but identifying queries which may benefit from retrieved context, and the efficacy of such context, remains challenging. In this work, we operationalize interpretability methods to ascertain whether we can predict the correctness of model outputs from the model’s activations alone, and if model internals contain signals about the efficacy of external context. We consider correct, incorrect, and irrelevant context and introduce metrics to distinguish amongst them. Experiments on six different models reveal that a simple classifier trained on first-layer activations of the first output token can predict output correctness with high accuracy, enabling early auditing. Our model-internals-based metric significantly outperforms prompting baselines at distinguishing between correct and incorrect context, guarding against inaccuracies introduced by polluted context. These findings offer a lens to better understand the underlying decision-making processes of LLMs.},
+}
+
+
+@article{LiSubramani2025ModelInternalSleuthing,
+  title={Model Internal Sleuthing: Finding Lexical Identity and Inflectional Morphology in Modern Language Models},
+  author={Michael Li and Nishant Subramani},
+  journal={Preprint},
+  year={2025},
+  url={},
+  bibtex_show = {},
+  abbr = "Under Review",
+  selected = {true},
+  paper_link = {https://arxiv.org/abs/2506.02132},
+  preview = {modelinternalsleuthing.png},
+  abstract = {Large transformer-based language models dominate modern NLP, yet our understanding of how they encode linguistic information is rooted in studies of early models like BERT and GPT-2. To better understand today's language models, we investigate how both classical architectures (BERT, DeBERTa, GPT-2)and contemporary large language models (Pythia, OLMo-2, Gemma-2, Qwen2.5, Llama-3.1) represent lexical identity and inflectional morphology. We train linear and nonlinear classifiers on layer-wise activations to predict word lemmas and inflectional features. We discover that models concentrate lexical information linearly in early layers and increasingly nonlinearly in later layers, while keeping inflectional information uniformly accessible and linearly separable throughout the layers. Further analysis reveals that these models encode inflectional morphology through generalizable abstractions, but rely predominantly on memorization to encode lexical identity. Remarkably, these patterns emerge across all 16 models we test, despite differences in architecture, size, and training regime (including pretrained and instruction-tuned variants). This consistency suggests that, despite substantial advances in LLM technologies, transformer models organize linguistic information in similar ways, indicating that these properties could be fundamental for next token prediction and are learned early during pretraining. Our code is available at https://github.com/ml5885/model_internal_sleuthing.},
+}
 @article{Subramani2025personalinfoparroting,
   title={Personal Information Parroting in Language Models},
   author={Nishant Subramani and Kshitish Ghate and Mona Diab},
