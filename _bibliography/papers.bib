@@ -28,14 +28,14 @@
   abstract = {Although large language models (LLMs) have tremendous utility, trustworthiness is still a chief concern: models often generate incorrect information with high confidence. Retrieval-augmented generation (RAG) is known to help, but identifying queries which may benefit from retrieved context, and the efficacy of such context, remains challenging. In this work, we operationalize interpretability methods to ascertain whether we can predict the correctness of model outputs from the model’s activations alone, and if model internals contain signals about the efficacy of external context. We consider correct, incorrect, and irrelevant context and introduce metrics to distinguish amongst them. Experiments on six different models reveal that a simple classifier trained on first-layer activations of the first output token can predict output correctness with high accuracy, enabling early auditing. Our model-internals-based metric significantly outperforms prompting baselines at distinguishing between correct and incorrect context, guarding against inaccuracies introduced by polluted context. These findings offer a lens to better understand the underlying decision-making processes of LLMs.},
 }
 
-@article{Subramani2025MakingSense,
-  title={SimBA: Simplifying Benchmark Analysis Using Performance Matrices Alone},
+@inproceedings{subramani2025simba,
+  title={Sim{BA}: Simplifying Benchmark Analysis Using Performance Matrices Alone},
   author={Nishant Subramani* and Alfredo Gomez* and Mona T. Diab},
-  journal={Workshop on Responsible and Reliable Foundation Models},
+  booktitle={Findings of EMNLP},
   year={2025},
   url={},
   bibtex_show = {},
-  abbr = "ICML (R2FM)",
+  abbr = "EMNLP",
   selected = {true},
   paper_link = {https://nishantsubramani.github.io/assets/pdf/simba_paper.pdf},
   preview = {simba.png},
