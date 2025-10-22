@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[🦁 SimBA](https://nishantsubramani.github.io/assets/pdf/simba_paper.pdf) is accepted to [EMNLP](https://2025.emnlp.org/) findings. See you in Suzhou in November :cn:!
+[🦁 SimBA](https://www.arxiv.org/abs/2510.17998) is accepted to [EMNLP](https://2025.emnlp.org/) findings. See you in Suzhou in November :cn:!

@@ -1,16 +1,30 @@
 ---
 ---
 @article{LiSubramani2025ModelInternalSleuthing,
-  title={Model Internal Sleuthing: Finding Lexical Identity and Inflectional Morphology in Modern Language Models},
+  title={Echoes of BERT: Do Modern Language Models Rediscover the Classical NLP Pipeline?},
   author={Michael Li and Nishant Subramani},
-  journal={Workshop on the Interplay of Model Behavior and Model Internals},
+  journal={Preprint (under review)},
   year={2025},
   url={https://arxiv.org/abs/2506.02132},
   bibtex_show = {},
-  abbr = "COLM (Interplay)",
+  abbr = "Under Review",
   selected = {true},
   paper_link = {https://arxiv.org/abs/2506.02132},
   preview = {modelinternalsleuthing.png},
+  abstract = {Large transformer-based language models dominate modern NLP, yet our understanding of how they encode linguistic information relies primarily on studies of early models like BERT and GPT-2. Building on classic BERTology work, we analyze 25 models spanning from classical architectures (BERT, DeBERTa, GPT-2) to modern large language models (Pythia, OLMo-2, Gemma-2, Qwen2.5, Llama-3.1), probing layer-by-layer representations across eight linguistic tasks in English. Consistent with earlier findings, we find that hierarchical organization persists in modern models: early layers capture syntax, middle layers handle semantics and entity-level information, and later layers encode discourse phenomena. We dive deeper, conducting an in-depth multilingual analysis of two specific linguistic properties - lexical identity and inflectional morphology - that help disentangle form from meaning. We find that lexical information concentrates linearly in early layers but becomes increasingly nonlinear deeper in the network, while inflectional information remains linearly accessible throughout all layers. Additional analyses of attention mechanisms, steering vectors, and pretraining checkpoints reveal where this information resides within layers, how it can be functionally manipulated, and how representations evolve during pretraining. Taken together, our findings suggest that, even with substantial advances in LLM technologies, transformer models learn to organize linguistic information in similar ways, regardless of model architecture, size, or training regime, indicating that these properties are important for next token prediction. Our code is available at https://github.com/ml5885/model_internal_sleuthing.},
+}
+
+@article{LiSubramani2025BertologyInModernWorld,
+  title={BERTology in the Modern World},
+  author={Michael Li and Nishant Subramani},
+  journal={Workshop on the Interplay of Model Behavior and Model Internals},
+  year={2025},
+  url={https://openreview.net/forum?id=FqahMD2wY8},
+  bibtex_show = {},
+  abbr = "COLM (Interplay)",
+  selected = {true},
+  paper_link = {https://openreview.net/forum?id=FqahMD2wY8},
+  preview = {},
   abstract = {Large transformer-based language models dominate modern NLP, yet our understanding of how they encode linguistic information is rooted in studies of early models like BERT and GPT-2. To better understand today's language models, we investigate how both classical architectures (BERT, DeBERTa, GPT-2)and contemporary large language models (Pythia, OLMo-2, Gemma-2, Qwen2.5, Llama-3.1) represent lexical identity and inflectional morphology. We train linear and nonlinear classifiers on layer-wise activations to predict word lemmas and inflectional features. We discover that models concentrate lexical information linearly in early layers and increasingly nonlinearly in later layers, while keeping inflectional information uniformly accessible and linearly separable throughout the layers. Further analysis reveals that these models encode inflectional morphology through generalizable abstractions, but rely predominantly on memorization to encode lexical identity. Remarkably, these patterns emerge across all 16 models we test, despite differences in architecture, size, and training regime (including pretrained and instruction-tuned variants). This consistency suggests that, despite substantial advances in LLM technologies, transformer models organize linguistic information in similar ways, indicating that these properties could be fundamental for next token prediction and are learned early during pretraining. Our code is available at https://github.com/ml5885/model_internal_sleuthing.},
 }
 
@@ -33,11 +47,11 @@
   author={Nishant Subramani* and Alfredo Gomez* and Mona T. Diab},
   booktitle={Findings of EMNLP},
   year={2025},
-  url={},
+  url={https://www.arxiv.org/abs/2510.17998},
   bibtex_show = {},
   abbr = "EMNLP",
   selected = {true},
-  paper_link = {https://nishantsubramani.github.io/assets/pdf/simba_paper.pdf},
+  paper_link = {https://www.arxiv.org/abs/2510.17998},
   preview = {simba.png},
   abstract = {Modern language models are evaluated on large benchmarks, which are difficult to make sense of, especially for model selection. Looking at the raw evaluation numbers themselves using a model-centric lens, we propose SimBA, a three phase framework to Simplify Benchmark Analysis. The three phases of SimBA are: stalk, where we conduct dataset \& model comparisons, prowl, where we discover a representative subset, and pounce, where we use the representative subset to predict performance on a held-out set of models. Applying SimBA to three popular LM benchmarks: HELM, MMLU, and BigBenchLite reveals that across all three benchmarks, datasets and models relate strongly to one another (stalk). We develop an representative set discovery algorithm which covers a benchmark using raw evaluation scores alone. Using our algorithm, we find that with 6.25\% (1/16), 1.7\% (1/58), and 28.4\% (21/74) of the datasets for HELM, MMLU, and BigBenchLite respectively, we achieve coverage levels of at least 95\% (prowl). Additionally, using just these representative subsets, we can both preserve model ranks and predict performance on a held-out set of models with near zero mean-squared error (pounce). Taken together, SimBA can help model developers improve efficiency during model training and dataset creators validate whether their newly created dataset differs from existing datasets in a benchmark. Our code is open source, available at https://github.com/nishantsubramani/simba.},
 }
