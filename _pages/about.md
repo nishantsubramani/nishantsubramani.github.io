@@ -21,7 +21,7 @@ I am a 3rd year PhD student 🎓 at [CMU](https://cmu.edu) in the [Language Tech
 
 Now, I am primarily interested in demystifying language model internals (MechInterp) and operationalizing them (ActionableInterp) to build more responsible, controllable, trustworthy, and efficient NLP systems. If you're interested in or actively working on model interpretability especially if you are from an underrepresented group, I'd love to chat and perhaps collaborate and/or mentor, please reach out! 
 
-<details>
+<details markdown="1">
   <summary>Longer Bio</summary>
 
 The past two summers, I interned at the semantic machines team at Microsoft Research and the cloud AI research team at Google working on actionable interpretability. Before CMU, I spent nearly two and a half years as a predoctoral researcher on the AllenNLP team at [AI2](https://allenai.org/), where I worked with [Matt Peters](https://scholar.google.com/citations?hl=en&user=K5nCPZwAAAAJ&view_op=list_works&sortby=pubdate). Before that I spent two years in industry at startups as a research scientist working on NLP, vision, speech, and multimodal applications. I have had the opportunity to work closely with some amazing collaborators at other institutions including [Aaron Mueller] (https://aaronmueller.github.io/), [Jason Eisner](https://www.cs.jhu.edu/~jason/), [Ben Van Durme](https://www.cs.jhu.edu/~vandurme/), [Margaret Mitchell](https://www.m-mitchell.com/), [Sasha Luccioni](https://www.sashaluccioni.com/), [Vladlen Koltun](https://vladlen.info/), and [Doug Downey](https://users.cs.northwestern.edu/~ddowney/).  
