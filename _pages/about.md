@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Model Interpretability Researcher 🔎 
+subtitle: Mechanistic Interpretability Researcher 🔎🔬 | Steering Vectors Inventor 🕹️
 
 profile:
   align: left
@@ -17,9 +17,9 @@ news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-I am a 3rd year PhD student 🎓 at [CMU](https://cmu.edu) in the [Language Technologies Institute (LTI)](https://lti.cs.cmu.edu/) advised by [Mona Diab](https://scholar.google.com/citations?user=-y6SIhQAAAAJ&hl=en). I am best known for discovering steering vectors in both LSTM and Transformer based language models ([NeurIPS2019](https://arxiv.org/abs/1907.04944), [arXiv2020](https://arxiv.org/abs/2008.09049), [ACL2022](https://arxiv.org/abs/2205.05124)). I have worked on open LLM initiatives such as [OLMo](https://allenai.org/olmo) and [BLOOM](https://bigscience.huggingface.co/blog/bloom) winning multiple [best paper awards](https://2024.aclweb.org/program/best_papers/) and a [GeekWire innovation of the year award](https://www.geekwire.com/2024/ai-and-telecom-breakthroughs-dominate-innovation-of-the-year-category-for-2024-geekwire-awards/i). 
+I am a 3rd year PhD student 🎓 at [CMU](https://cmu.edu) in the [Language Technologies Institute (LTI)](https://lti.cs.cmu.edu/) advised by [Mona Diab](https://scholar.google.com/citations?user=-y6SIhQAAAAJ&hl=en). I am best known for discovering steering vectors in both LSTM and Transformer based language models ([NeurIPS2019](https://arxiv.org/abs/1907.04944), [arXiv2020](https://arxiv.org/abs/2008.09049), [ACL2022](https://arxiv.org/abs/2205.05124)). I have also worked on open LLM initiatives such as [OLMo](https://allenai.org/olmo) and [BLOOM](https://bigscience.huggingface.co/blog/bloom) winning multiple [best paper awards](https://2024.aclweb.org/program/best_papers/) and a [GeekWire innovation of the year award](https://www.geekwire.com/2024/ai-and-telecom-breakthroughs-dominate-innovation-of-the-year-category-for-2024-geekwire-awards/i). 
 
-Now, I am primarily interested in demystifying language model internals (MechInterp) and operationalizing them (ActionableInterp) to build more responsible, controllable, trustworthy, and efficient NLP systems. If you're interested in or actively working on model interpretability especially if you are from an underrepresented group, I'd love to chat and perhaps collaborate and/or mentor, please reach out! 
+I am primarily interested in demystifying language model internals (MechInterp) and operationalizing them (ActionableInterp) to build more responsible, controllable, trustworthy, and efficient NLP systems. If you're interested in or actively working on model interpretability especially if you are from an underrepresented group, I'd love to chat and perhaps collaborate and/or mentor, please reach out! 
 
 <details markdown="1">
   <summary>Longer Bio</summary>
