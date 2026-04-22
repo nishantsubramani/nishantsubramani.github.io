@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:trophy: :trophy: The ACUTE Protocol :angle: won an outstanding paper award and How Much Do Circuits Tell Us? Measuring the Consistency and Specificity of Language Model Circuits won a best paper award at the LTI Student Research Symposium! :tada: 
+:trophy: :trophy: *The ACUTE Protocol* won an **outstanding paper award** and *How Much Do Circuits Tell Us? Measuring the Consistency and Specificity of Language Model Circuits* won a **best paper award** at the LTI Student Research Symposium! :tada: 
