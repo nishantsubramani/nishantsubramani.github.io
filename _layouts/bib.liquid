@@ -25,11 +25,11 @@
           <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
         {% endif %}
     {% endif %}
-      {% if entry.workshop %}
-        <span class="badge rounded w-100" style="background-color: #ADD8E6; color: white;">{{ entry.workshop }}</span>
+      {%- if entry.workshop -%}
+        <abbr class="badge rounded w-100" style="background-color: #ADD8E6; color: white;">{{ entry.workshop }}</abbr>
       {% endif %}
-      {% if entry.workshop_two %}
-        <span class="badge rounded w-100" style="background-color: #ADD8E6; color: white;">{{ entry.workshop_two }}</span>
+      {%- if entry.workshop_two -%}
+        <abbr class="badge rounded w-100" style="background-color: #ADD8E6; color: white;">{{ entry.workshop_two }}</abbr>
       {% endif %}
       {% if entry.preview %}
         {% if entry.preview contains '://' %}
