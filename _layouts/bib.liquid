@@ -41,6 +41,12 @@
           %}
         {% endif %}
     {% endif %}
+    {% if entry.workshop %}
+      <span class="badge rounded w-100">{{ entry.workshop}}</span>
+    {% endif %}
+    {% if entry.workshop_two %}
+      <span class="badge rounded w-100">{{ entry.workshop_two}}</span>
+    {% endif %}
     {% if entry.award %}
       <span class="award badge">{{ entry.award }}</span>
     {% endif %}
