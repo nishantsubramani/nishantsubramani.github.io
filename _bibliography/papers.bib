@@ -137,6 +137,7 @@ and Trust},
   abbr = "EMNLP",
   selected = {true},
   paper_link = {https://www.arxiv.org/abs/2510.17998},
+  workshop = {ICML (R2FM)},
   preview = {simba.png},
   abstract = {Modern language models are evaluated on large benchmarks, which are difficult to make sense of, especially for model selection. Looking at the raw evaluation numbers themselves using a model-centric lens, we propose SimBA, a three phase framework to Simplify Benchmark Analysis. The three phases of SimBA are: stalk, where we conduct dataset \& model comparisons, prowl, where we discover a representative subset, and pounce, where we use the representative subset to predict performance on a held-out set of models. Applying SimBA to three popular LM benchmarks: HELM, MMLU, and BigBenchLite reveals that across all three benchmarks, datasets and models relate strongly to one another (stalk). We develop an representative set discovery algorithm which covers a benchmark using raw evaluation scores alone. Using our algorithm, we find that with 6.25\% (1/16), 1.7\% (1/58), and 28.4\% (21/74) of the datasets for HELM, MMLU, and BigBenchLite respectively, we achieve coverage levels of at least 95\% (prowl). Additionally, using just these representative subsets, we can both preserve model ranks and predict performance on a held-out set of models with near zero mean-squared error (pounce). Taken together, SimBA can help model developers improve efficiency during model training and dataset creators validate whether their newly created dataset differs from existing datasets in a benchmark. Our code is open source, available at https://github.com/nishantsubramani/simba.},
 }
@@ -153,7 +154,7 @@ and Trust},
   paper_link = {https://aclanthology.org/2026.findings-eacl.45.pdf},
   preview = {pythiaparrot.png},
   workshop = {ICML (MEMFM)},
-  workshop_two = {ACL (TrustNLP)},
+  workshop_two = {ACL (L2M2)},
   abstract = {Modern language models (LM) are trained on large scrapes of the Web, containing millions of personal information (PI) instances, many of which LMs memorize, increasing privacy risks. In this work, we develop the regexes and rules (R\&R) detector suite to detect email addresses, phone numbers, and IP addresses, which outperforms the best regex-based PI detectors. On a manually curated set of 483 instances of PI, we measure memorization: finding that 13.6\% are parroted verbatim by the Pythia-6.9b model, i.e., when the model is prompted with the tokens that precede the PI in the original document, greedy decoding generates the entire PI span exactly. We expand this analysis to study models of varying sizes (160M-6.9B) and timesteps of pretraining (70k-143k iterations) on the Pythia model suite and find that both model size and amount of pretraining are positively correlated with memorization. Even the smallest model, Pythia-160m, parrots 2.7\% of the instances exactly. Consequently, we strongly recommend that pretraining datasets be aggressively filtered and anonymized to minimize PI parroting. The code for our detectors can be found at https://github.com/nishantsubramani/rr_pi_detectors/.},
 }
 
@@ -180,6 +181,7 @@ and Trust},
     abbr = "NAACL",
     selected = {true},
     paper_link = {https://aclanthology.org/2025.naacl-long.615/},
+    workshop = {COLM (Interplay)}
     preview = {mice4cat.png},
     abstract = {Tool-using agents that act in the world need to be both useful and safe. Well-calibrated model confidences can be used to weigh the risk versus reward of potential actions, but prior work shows that many models are poorly calibrated. Inspired by interpretability literature exploring the internals of models, we propose a novel class of model-internal confidence estimators (MICE) to better assess confidence when calling tools. MICE first decodes from each intermediate layer of the language model using logit lens (nostalgebraist, 2020) and then computes similarity scores between each layer’s generation and the final output. These features are fed into a learned probabilistic classifier to assess confidence in the decoded output. On the simulated trial and error (STE) tool-calling dataset using Llama3 models, we find that MICE beats or matches the baselines on smoothed expected calibration error. Using MICE confidences to determine whether to call a tool significantly improves over strong baselines on a new metric, expected tool-calling utility. Further experiments show that MICE is sample-efficient, can generalize zero-shot to unseen APIs, and results in higher tool-calling utility in scenarios with varying risk levels. Our code is open source, available at https://github.com/microsoft/mice_for_cats.},
 }
