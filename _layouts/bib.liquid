@@ -25,6 +25,12 @@
           <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
         {% endif %}
     {% endif %}
+      {% if entry.workshop %}
+        <span class="badge rounded w-100" style="background-color: #007bff; color: white;">{{ entry.workshop }}</span>
+      {% endif %}
+      {% if entry.workshop_two %}
+        <span class="badge rounded w-100" style="background-color: #28a745; color: white;">{{ entry.workshop_two }}</span>
+      {% endif %}
       {% if entry.preview %}
         {% if entry.preview contains '://' %}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
@@ -40,12 +46,6 @@
             alt=entry.preview
           %}
         {% endif %}
-    {% endif %}
-    {% if entry.workshop %}
-        <span class="badge rounded w-100" style="background-color: #007bff; color: white;">{{ entry.workshop }}</span>
-    {% endif %}
-    {% if entry.workshop_two %}
-        <span class="badge rounded w-100" style="background-color: #28a745; color: white;">{{ entry.workshop_two }}</span>
     {% endif %}
     {% if entry.award %}
         <span class="award badge">🏆 {{ entry.award }}</span>
