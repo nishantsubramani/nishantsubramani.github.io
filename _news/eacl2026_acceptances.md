@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-[Personal Information Parroting in LMs](https://nishantsubramani.github.io/assets/pdf/pi_paper.pdf) accepted to EACL Findings!
+[Personal Information Parroting in LMs](https://aclanthology.org/2026.findings-eacl.45/) accepted to EACL Findings!
 
