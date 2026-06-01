@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Invited to present [ACUTE Protocol]() at [Jump Trading's AI Symposium](https://www.jumptrading.com/) in NYC! 
+Invited to present [ACUTE Protocol](https://nishantsubramani.github.io) at [Jump Trading's AI Symposium](https://www.jumptrading.com/) in NYC! 
