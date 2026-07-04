@@ -1,6 +1,6 @@
 ---
 ---
-@article{benson-2026-nlp-interdisciplinary,
+@article{nikas-2026-ambiguity-steering-confdience-estimation,
   title={Improving Confidence Estimation in Language Models with Linear Representations of Ambiguity
 },
   author={Themistoklis Nikas and Nishant Subramani and Aaron Mueller},
@@ -35,14 +35,15 @@ and Trust},
   author={Nishant Subramani and Palash Goyal and Yiwen Song and Mani Malek and Yuan Xue and Tomas Pfister and Hamid Palangi},
   journal={ICML},
   year={2026},
-  url={},
-  bibtex_show = {},
+  url={https://arxiv.org/abs/2606.07822},
+  bibtex_show = {true},
   abbr = "ICML",
   selected = {true},
-  paper_link = {},
+  paper_link = {https://arxiv.org/abs/2606.07822},
   preview = {acute_protocol.png},
-  workshop = {ACL (TrustNLP)},
-  abstract = {},
+  workshop = {ICML (MechInterp)},
+  workshop_two = {ACL (TrustNLP)},
+  abstract = {As language models improve and become increasingly deployed to solve a variety of tasks, trustworthiness becomes essential. Calibration is a good proxy for trust: well-calibrated confidence estimates help inform the risk versus reward tradeoff when trusting a specific model output. Unfortunately, even as models improve, they remain poorly calibrated, often biasing towards overconfidence. Additionally, calibration can be gamed: a policy that always predicts the base rate is perfectly calibrated, but completely uninformative. To resolve this, we develop a new metric, expected utility renormalized by the oracle (EURO), that balances calibration and informativeness. We also propose a general-purpose activation-based confidence, utility, and trust estimation protocol (ACUTE) to appropriately adjudicate uncertainty. The ACUTE protocol provides flexible, sample-efficient, and compute-efficient confidence estimators for 3 tasks including multiple choice question answering, tool-calling, and scientific document summarization across 6 models from 4 model families. ACUTE outperforms strong baselines on EURO, while maintaining low calibration error. Taken together, our work shows that equipping LLMs with the ACUTE protocol can improve calibration, utility, and trustworthiness in numerous settings.},
 }
 
 
@@ -51,13 +52,13 @@ and Trust},
   author={Nishant Subramani},
   journal={BigPicture Workshop at ACL},
   year={2026},
-  url={},
-  bibtex_show = {},
+  url={https://aclanthology.org/2026.bigpicture-main.10/},
+  bibtex_show = {true},
   abbr = "ACL (BigPicture)",
   selected = {true},
-  paper_link = {},
+  paper_link = {https://aclanthology.org/2026.bigpicture-main.10/},
   preview = {big_picture_process_fig.png},
-  abstract = {},
+  abstract = {Language models have changed from unreliable text generators to highly-capable large models with trillions of parameters. Capability increases come hand-in-hand with increases in scale, making understanding the internal representations of models more challenging. Since millions of users increasing rely on language models to interact with external tools or make decisions in medium or high-stakes scenarios, we need to establish control over model behavior and know when to trust model outputs. In this paper, we discuss our contributions on harnessing the latent spaces by proposing steering vectors for control and developing latent space-based model calibrators for trust. Together, our contributions help demystify the latent spaces of language models and offer new insights into how to harness model internals to build more trustworthy language technology.},
 }
 
 @article{li-subramani-2026-circuits-consistency-specificity,
