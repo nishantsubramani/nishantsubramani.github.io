@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-[The ACUTE Protocol: Operationalizing Language Model Activations for Better Calibration, Utility, and Trust]() accepted to the [TrustNLP Workshop](https://trustnlpworkshop.github.io/) at [ACL](https://2026.aclweb.org/)!
+[The ACUTE Protocol: Operationalizing Language Model Activations for Better Calibration, Utility, and Trust](https://arxiv.org/abs/2606.07822) accepted to the [TrustNLP Workshop](https://trustnlpworkshop.github.io/) at [ACL](https://2026.aclweb.org/)!
 

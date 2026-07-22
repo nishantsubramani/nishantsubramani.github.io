@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-[Harnessing the Latent Space: From Steering Vectors to Model Calibrators for Control and Trust]() accepted to the [BigPicture Workshop](https://www.bigpictureworkshop.com/) at [ACL](https://2026.aclweb.org/)! See you in San Diego :sunny:!
+[Harnessing the Latent Space: From Steering Vectors to Model Calibrators for Control and Trust](https://arxiv.org/abs/2607.00083) accepted to the [BigPicture Workshop](https://www.bigpictureworkshop.com/) at [ACL](https://2026.aclweb.org/)! See you in San Diego :sunny:!
 
