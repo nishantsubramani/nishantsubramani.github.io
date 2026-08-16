@@ -101,14 +101,14 @@
           {%- for item in collection.docs -%}
             {
               {%- if item.inline -%}
-                {%- assign title = item.content | emojify | newline_to_br | replace: "<br />", " " | replace: "<br/>", " " | strip_html | strip_newlines | escape | strip -%}
+                {%- assign title = item.content | newline_to_br | replace: "<br />", " " | replace: "<br/>", " " | strip_html | strip_newlines | strip_emoji_shortcodes | strip -%}
               {%- else -%}
-                {%- assign title = item.title | emojify | newline_to_br | replace: "<br />", " " | replace: "<br/>", " " | strip_html | strip_newlines | escape | strip -%}
+                {%- assign title = item.title | newline_to_br | replace: "<br />", " " | replace: "<br/>", " " | strip_html | strip_newlines | strip_emoji_shortcodes | strip -%}
               {%- endif -%}
-              id: "{{ collection.label }}-{{ title | slugify }}",
-              title: "{{ title | truncatewords: 13 }}",
-              description: "{{ item.description | strip_html | strip_newlines | escape | strip }}",
-              section: "{{ collection.label | capitalize }}",
+              id: {{ collection.label | append: "-" | append: title | slugify | jsonify }},
+              title: {{ title | truncatewords: 13 | jsonify }},
+              description: {{ item.description | strip_html | strip_newlines | strip | jsonify }},
+              section: {{ collection.label | capitalize | jsonify }},
               {%- unless item.inline -%}
                 handler: () => {
                   window.location.href = "{{ item.url | relative_url }}";
