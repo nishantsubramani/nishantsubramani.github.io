@@ -24,7 +24,7 @@
         {% else %}
           <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
         {% endif %}
-    {% endif %}
+      {% endif %}
       {%- if entry.workshop -%}
         <abbr class="badge rounded w-100" style="background-color: #86C5DA; color: white;">{{ entry.workshop }}</abbr>
       {% endif %}
@@ -46,13 +46,13 @@
             alt=entry.preview
           %}
         {% endif %}
-    {% endif %}
-    {% if entry.award %}
+      {% endif %}
+      {% if entry.award %}
         <span class="award badge">🏆 {{ entry.award }}</span>
-    {% endif %}
-    {% if entry.extendedabstract%}
-        <span class="award badge">{{ entry.extendedabstract}}</span>
-    {% endif %}
+      {% endif %}
+      {% if entry.extendedabstract %}
+        <span class="award badge">{{ entry.extendedabstract }}</span>
+      {% endif %}
     </div>
   {% endif %}
 
@@ -167,12 +167,12 @@
     {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
     {% else %}
-        {% capture entrytype %}{% endcapture %}
+      {% capture entrytype %}{% endcapture %}
     {% endif %}
     {% comment %}
-    {% if entry.month %}
-      {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
-    {% endif %}
+      {% if entry.month %}
+        {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
+      {% endif %}
     {% endcomment %}
     {% if entry.year %}
       {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
@@ -261,8 +261,7 @@
       {% endif %}
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
-    {% endif %}
-
+      {% endif %}
     </div>
     {% if site.enable_publication_badges %}
       {% assign entry_has_altmetric_badge = false %}
@@ -361,7 +360,7 @@
       <div class="bibtex hidden">
         {% highlight bibtex %}
         {{- entry.bibtex | hideCustomBibtex -}}
-        {% endhighlight %}
+      {% endhighlight %}
       </div>
     {% endif %}
 

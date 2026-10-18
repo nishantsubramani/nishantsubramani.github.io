@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-New preprint: [On the Persistent Effects of Lexicality in Large Language Models](https://arxiv.org/abs/2606.02750) led by [Hammad Rizwan](https://hammadrizwan.github.io/) is out! 
+New preprint: [On the Persistent Effects of Lexicality in Large Language Models](https://arxiv.org/abs/2606.02750) led by [Hammad Rizwan](https://hammadrizwan.github.io/) is out!

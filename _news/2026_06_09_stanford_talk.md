@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Gave a talk at Stanford University in the interpretability reading group on *Operationalizing Model Internals for Confidence Estimation.* 
+Gave a talk at Stanford University in the interpretability reading group on _Operationalizing Model Internals for Confidence Estimation._

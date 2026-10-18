@@ -6,16 +6,20 @@ description: Add a new publication or update an existing one (e.g. preprint acce
 # Add or update a paper
 
 ## Gather info
+
 Usually the user gives an arXiv/ACL Anthology link. Fetch it to get the title, full author list, abstract, and year. Ask the user only for things you can't find:
+
 - the venue and its badge text (`abbr`)
 - whether it should be **selected** (shown on the home page)
 - a preview figure (optional)
 - any award
 
 ## Update vs. add
+
 First search `papers.bib` by title or arXiv ID. If the paper is already there, for example as `"Under Review"` or as a preprint, **update that entry** rather than adding a duplicate. Typical updates are changing `journal`/`abbr`, adding `workshop`/`workshop_two` badges, or adding `award`.
 
 ## New entry template
+
 Insert it at the **top** of `_bibliography/papers.bib`. The file runs newest-first, and the page groups entries by `year`.
 
 ```bibtex
@@ -35,6 +39,7 @@ Insert it at the **top** of `_bibliography/papers.bib`. The file runs newest-fir
 ```
 
 ## Field rules
+
 - **`url` and `paper_link`:** set both to the same link. The Paper button appears only when `url` is non-empty, but it links to `paper_link`.
 - **`abbr`:** the main venue badge. Conventions:
   - main conference: `"ICML"`, `"ACL"`, `"COLM"`
@@ -49,4 +54,5 @@ Insert it at the **top** of `_bibliography/papers.bib`. The file runs newest-fir
 - **Key:** `lastname-YYYY-keyword`, or `lastname-etal-YYYY-keyword` for 3 or more authors. It must be unique within the file.
 
 ## Afterwards
+
 Offer to add a matching news item with the `add-news` skill.

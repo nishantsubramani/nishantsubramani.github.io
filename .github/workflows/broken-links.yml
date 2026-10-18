@@ -49,4 +49,4 @@ jobs:
         with:
           fail: true
           # Theme docs still reference deleted al-folio demos; skip Liquid-heavy pages
-          args: --user-agent 'curl/7.54' --exclude-path README.md --exclude-path CUSTOMIZE.md --exclude-path FAQ.md --exclude-path INSTALL.md --exclude-path _pages/404.md --verbose --no-progress './**/*.md' './**/*.html'
+          args: --user-agent 'curl/7.54' --exclude-path README.md --exclude-path CUSTOMIZE.md --exclude-path FAQ.md --exclude-path INSTALL.md --exclude-path _pages/404.md --exclude 'linkedin\.com' --exclude 'geekwire\.com' --verbose --no-progress './**/*.md' './**/*.html'

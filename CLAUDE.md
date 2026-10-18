@@ -4,20 +4,22 @@ Personal academic site for Nishant Subramani (CMU LTI PhD, interpretability), se
 
 ## What's live
 
-| URL | Source | Notes |
-| --- | --- | --- |
-| `/` | `_pages/about.md` (layout `about`) | Bio, profile photo, news feed, selected papers, social icons |
-| `/publications/` | `_pages/publications.md` | Renders all of `_bibliography/papers.bib` via jekyll-scholar, grouped by year, with bib search |
-| `/news/` | `_pages/news.md` | Full news list, not in the navbar |
-| `/cv/` | `_pages/cv.md` | `layout: null` meta-refresh redirect to `assets/pdf/nishantsubramani_cv.pdf` |
-| `/404.html` | `_pages/404.md` | |
+| URL              | Source                             | Notes                                                                                          |
+| ---------------- | ---------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `/`              | `_pages/about.md` (layout `about`) | Bio, profile photo, news feed, selected papers, social icons                                   |
+| `/publications/` | `_pages/publications.md`           | Renders all of `_bibliography/papers.bib` via jekyll-scholar, grouped by year, with bib search |
+| `/news/`         | `_pages/news.md`                   | Full news list, not in the navbar                                                              |
+| `/cv/`           | `_pages/cv.md`                     | `layout: null` meta-refresh redirect to `assets/pdf/nishantsubramani_cv.pdf`                   |
+| `/404.html`      | `_pages/404.md`                    |                                                                                                |
 
 The navbar shows only pages with `nav: true`, ordered by `nav_order`: publications (2) and cv (5), plus "about" as home.
 
 ## Common edits
 
 ### Add a news item
+
 Use the `add-news` skill (`.claude/skills/add-news/`). Create `_news/YYYY_MM_DD_slug.md`; every file follows this naming. The filename date must match the `date` field, which controls the sort order.
+
 ```markdown
 ---
 layout: post
@@ -28,12 +30,15 @@ related_posts: false
 
 One-line announcement with [links](https://...) and :emoji_shortcodes:.
 ```
+
 - `inline: true` renders the body directly in the news table. Keep the body to one paragraph because `<p>` tags get stripped.
 - The home page shows the 10 most recent items (`announcements.limit` in `_config.yml`).
 - Emoji shortcodes (`:sunny:`) are rendered by jemoji. `_plugins/strip-emoji-shortcodes.rb` strips them for the search index because they used to break the generated JS.
 
 ### Add or update a publication
+
 Use the `add-paper` skill (`.claude/skills/add-paper/`). Edit `_bibliography/papers.bib` and put the newest entries at the top. Entries use `@article` or `@inproceedings`. These fields matter (rendered by `_layouts/bib.liquid`):
+
 - `abbr`: the venue badge, e.g. `"ICML"` or `"COLM (SciFM)"`. It can optionally be keyed in `_data/venues.yml` for a color or URL, but that file is currently empty.
 - `workshop`, `workshop_two`: **custom** extra light-blue badges for additional venues.
 - `award`: **custom** 🏆 badge. `extendedabstract`: **custom** plain badge.
@@ -45,9 +50,11 @@ Use the `add-paper` skill (`.claude/skills/add-paper/`). Edit `_bibliography/pap
 - Author highlighting uses `scholar.last_name` and `first_name` in `_config.yml`. Co-author links can go in `_data/coauthors.yml`.
 
 ### Update the CV
+
 Replace `assets/pdf/nishantsubramani_cv.pdf` and keep the same file name.
 
 ### Bio, profile, and social links
+
 - Bio text and subtitle: `_pages/about.md`. Photo: `assets/img/prof_pic.jpg`. Favicon: `prof_pic_color.jpg`.
 - Social IDs (Scholar, Semantic Scholar, GitHub, LinkedIn, X, Bluesky) and `contact_note`: `_config.yml`.
 
@@ -63,10 +70,11 @@ Replace `assets/pdf/nishantsubramani_cv.pdf` and keep the same file name.
 
 ## Build, run, and deploy
 
-- **Local:** the system Ruby is 2.6, which is too old (CI uses 3.2.2), so use Docker: `docker compose up` and open http://localhost:8080. The build output goes to `_site/`, which is gitignored.
+- **Local:** the system Ruby is 2.6, which is too old (CI uses 3.2.2), so use Docker: `docker compose up` and open `http://localhost:8080`. The build output goes to `_site/`, which is gitignored.
 - **Deploy:** pushing to `main` triggers `.github/workflows/deploy.yml`. It runs `bundle exec jekyll build` with Ruby 3.2.2, purges CSS, then pushes `_site` to the `gh-pages` branch. Don't edit `gh-pages` directly.
 - After deploy, `broken-links-site.yml` runs lychee on local links. `broken-links.yml` checks links in the source on push.
-- **Formatting:** Prettier with the Liquid plugin (`.prettierrc`, printWidth 150), enforced in CI by `prettier.yml`. Run `npx prettier --write <files>` on changed `.liquid`, `.md`, and `.scss` files.
+- **Formatting:** Prettier with the Liquid plugin (`.prettierrc`, printWidth 150). CI (`prettier.yml`) installs the **latest** prettier and `@shopify/prettier-plugin-liquid` and runs `npx prettier . --check`, so the pinned versions in `package.json` can disagree with CI. Match it with `npm install --no-save prettier@latest @shopify/prettier-plugin-liquid@latest`, then run `npx prettier --write <files>` on changed files before committing.
+- **Link check:** `broken-links.yml` runs lychee on all `.md` and `.html` sources. Write placeholder or local URLs inside backticks so they are not checked. LinkedIn and GeekWire block bots, so they are excluded.
 
 ## Conventions
 

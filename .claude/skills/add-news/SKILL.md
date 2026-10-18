@@ -21,10 +21,13 @@ One or two sentences, single paragraph, with [markdown links](https://...) and o
 ```
 
 ## Style (match existing items)
-- First person, past tense, ends with `!`. E.g. `Gave a talk at Brown University in [Ellie Pavlick's group](...) on *Talk Title*!`
-- Paper names are linked to arXiv/ACL Anthology; venues linked to the conference site; people linked to their homepages. Mentees: "led by my undergrad mentee [Name](url)".
-- Talk titles in `*italics*`.
+
+- First person, past tense, ends with `!`. E.g. `Gave a talk at Brown University in [Ellie Pavlick's group](...) on _Talk Title_!`
+- Paper names are linked to arXiv/ACL Anthology; venues linked to the conference site; people linked to their homepages. Mentees: `led by my undergrad mentee [Name](https://...)`.
+- Talk titles in `_italics_` (Prettier converts `*x*` to `_x_`).
 - Single paragraph only (`<p>` tags get stripped in the feed).
+- No trailing whitespace. Run `npx prettier --write <file>` on the new file before committing.
 
 ## If the news is a paper acceptance/preprint
+
 Also check `_bibliography/papers.bib` — add the paper or update its venue (use the `add-paper` skill).

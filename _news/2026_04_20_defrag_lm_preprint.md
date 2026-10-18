@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our new preprint: [Defragmenting Language Models: An Interpretability-based Approach for Vocabulary Expansion](https://arxiv.org/abs/2604.16656) led by [Maitrey Mehta](https://sites.google.com/view/maitreymehta/home) is out! 
+Our new preprint: [Defragmenting Language Models: An Interpretability-based Approach for Vocabulary Expansion](https://arxiv.org/abs/2604.16656) led by [Maitrey Mehta](https://sites.google.com/view/maitreymehta/home) is out!
