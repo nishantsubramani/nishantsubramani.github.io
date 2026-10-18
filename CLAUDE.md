@@ -73,7 +73,7 @@ Replace `assets/pdf/nishantsubramani_cv.pdf` and keep the same file name.
 - **Local:** the system Ruby is 2.6, which is too old (CI uses 3.2.2), so use Docker: `docker compose up` and open `http://localhost:8080`. The build output goes to `_site/`, which is gitignored.
 - **Deploy:** pushing to `main` triggers `.github/workflows/deploy.yml`. It runs `bundle exec jekyll build` with Ruby 3.2.2, purges CSS, then pushes `_site` to the `gh-pages` branch. Don't edit `gh-pages` directly.
 - After deploy, `broken-links-site.yml` runs lychee on local links. `broken-links.yml` checks links in the source on push.
-- **Formatting:** Prettier with the Liquid plugin (`.prettierrc`, printWidth 150). CI (`prettier.yml`) installs the **latest** prettier and `@shopify/prettier-plugin-liquid` and runs `npx prettier . --check`, so the pinned versions in `package.json` can disagree with CI. Match it with `npm install --no-save prettier@latest @shopify/prettier-plugin-liquid@latest`, then run `npx prettier --write <files>` on changed files before committing.
+- **Formatting:** Prettier with the Liquid plugin (`.prettierrc`, printWidth 150). Versions are pinned exactly in `package.json`/`package-lock.json`, and CI (`prettier.yml`) runs `npm ci` then `npx prettier . --check`. Locally, run `npm ci` once, then `npx prettier --write <files>` on changed files before committing. Bump both versions together in `package.json` if upgrading.
 - **Link check:** `broken-links.yml` runs lychee on all `.md` and `.html` sources. Write placeholder or local URLs inside backticks so they are not checked. LinkedIn and GeekWire block bots, so they are excluded.
 
 ## Conventions
